@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>amir maldaran</title>
+    
+    <!-- ---------------------bootstrap--------------------- -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- ---------------------Font--------------------- -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+
+    
+    <!-- ---------------------css--------------------- -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- ---------------------icon--------------------- -->
+    <script src="https://kit.fontawesome.com/b0c183d80e.js" crossorigin="anonymous"></script>
+    
+    <!-- ---------------------js--------------------- -->
+    <script src="app.js" defer></script>
+    
+
+</head>
+
+<body>
+
+
+
+    <menu class="menu">
+
+        <a href="#home">
+            <button class="menu__item active" style="--bgColorItem: #C490E4;">
+                <span class="">Home</span>
+
+                <svg class="icon hidden" viewBox="0 0 24 24">
+                    <path
+                        d="M18.121,9.88l-7.832-7.836c-0.155-0.158-0.428-0.155-0.584,0L1.842,9.913c-0.262,0.263-0.073,0.705,0.292,0.705h2.069v7.042c0,0.227,0.187,0.414,0.414,0.414h3.725c0.228,0,0.414-0.188,0.414-0.414v-3.313h2.483v3.313c0,0.227,0.187,0.414,0.413,0.414h3.726c0.229,0,0.414-0.188,0.414-0.414v-7.042h2.068h0.004C18.331,10.617,18.389,10.146,18.121,9.88 M14.963,17.245h-2.896v-3.313c0-0.229-0.186-0.415-0.414-0.415H8.342c-0.228,0-0.414,0.187-0.414,0.415v3.313H5.032v-6.628h9.931V17.245z M3.133,9.79l6.864-6.868l6.867,6.868H3.133z">
+                    </path>
+                </svg>
+            </button>
+        </a>
+
+        <a href="#about" class="">
+            <button class="menu__item" style="--bgColorItem: #9673b8;">
+                <span class="hidden">About</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24">
+                    <path
+                        d="M12.075,10.812c1.358-0.853,2.242-2.507,2.242-4.037c0-2.181-1.795-4.618-4.198-4.618S5.921,4.594,5.921,6.775c0,1.53,0.884,3.185,2.242,4.037c-3.222,0.865-5.6,3.807-5.6,7.298c0,0.23,0.189,0.42,0.42,0.42h14.273c0.23,0,0.42-0.189,0.42-0.42C17.676,14.619,15.297,11.677,12.075,10.812 M6.761,6.775c0-2.162,1.773-3.778,3.358-3.778s3.359,1.616,3.359,3.778c0,2.162-1.774,3.778-3.359,3.778S6.761,8.937,6.761,6.775 M3.415,17.69c0.218-3.51,3.142-6.297,6.704-6.297c3.562,0,6.486,2.787,6.705,6.297H3.415z">
+                    </path>
+                </svg>
+            </button>
+        </a>
+
+        <a href="#services">
+            <button class="menu__item" style="--bgColorItem: #6050ab;">
+                <span class="hidden">project</span>
+
+                <svg class="icon" viewBox="0 0 24 24">
+                    <path
+                        d="M17.283,5.549h-5.26V4.335c0-0.222-0.183-0.404-0.404-0.404H8.381c-0.222,0-0.404,0.182-0.404,0.404v1.214h-5.26c-0.223,0-0.405,0.182-0.405,0.405v9.71c0,0.223,0.182,0.405,0.405,0.405h14.566c0.223,0,0.404-0.183,0.404-0.405v-9.71C17.688,5.731,17.506,5.549,17.283,5.549 M8.786,4.74h2.428v0.809H8.786V4.74z M16.879,15.26H3.122v-4.046h5.665v1.201c0,0.223,0.182,0.404,0.405,0.404h1.618c0.222,0,0.405-0.182,0.405-0.404v-1.201h5.665V15.26z M9.595,9.583h0.81v2.428h-0.81V9.583zM16.879,10.405h-5.665V9.19c0-0.222-0.183-0.405-0.405-0.405H9.191c-0.223,0-0.405,0.183-0.405,0.405v1.215H3.122V6.358h13.757V10.405z">
+                    </path>
+                </svg>
+            </button>
+        </a>
+
+        <a href="#contact" class="">
+            <button class="menu__item" style="--bgColorItem: #010026;">
+                <span class="hidden">Contact</span>
+
+                <svg class="icon" viewBox="0 0 24 24">
+                    <path
+                        d="M17.657,2.982H2.342c-0.234,0-0.425,0.191-0.425,0.426v10.21c0,0.234,0.191,0.426,0.425,0.426h3.404v2.553c0,0.397,0.48,0.547,0.725,0.302l2.889-2.854h8.298c0.234,0,0.426-0.191,0.426-0.426V3.408C18.083,3.174,17.892,2.982,17.657,2.982M17.232,13.192H9.185c-0.113,0-0.219,0.045-0.3,0.124l-2.289,2.262v-1.96c0-0.233-0.191-0.426-0.425-0.426H2.767V3.833h14.465V13.192z M10,7.237c-0.821,0-1.489,0.668-1.489,1.489c0,0.821,0.668,1.489,1.489,1.489c0.821,0,1.488-0.668,1.488-1.489C11.488,7.905,10.821,7.237,10,7.237 M10,9.364c-0.352,0-0.638-0.288-0.638-0.638c0-0.351,0.287-0.638,0.638-0.638c0.351,0,0.638,0.287,0.638,0.638C10.638,9.077,10.351,9.364,10,9.364 M14.254,7.237c-0.821,0-1.489,0.668-1.489,1.489c0,0.821,0.668,1.489,1.489,1.489s1.489-0.668,1.489-1.489C15.743,7.905,15.075,7.237,14.254,7.237 M14.254,9.364c-0.351,0-0.638-0.288-0.638-0.638c0-0.351,0.287-0.638,0.638-0.638c0.352,0,0.639,0.287,0.639,0.638C14.893,9.077,14.605,9.364,14.254,9.364 M5.746,7.237c-0.821,0-1.489,0.668-1.489,1.489c0,0.821,0.668,1.489,1.489,1.489c0.821,0,1.489-0.668,1.489-1.489C7.234,7.905,6.566,7.237,5.746,7.237 M5.746,9.364c-0.351,0-0.638-0.288-0.638-0.638c0-0.351,0.287-0.638,0.638-0.638c0.351,0,0.638,0.287,0.638,0.638C6.384,9.077,6.096,9.364,5.746,9.364">
+                    </path>
+                </svg>
+            </button>
+        </a>
+
+        <div class="menu__border"></div>
+
+    </menu>
+
+    <div class="svg-container">
+        <svg viewBox="0 0 202.9 45.5">
+            <clipPath id="menu" clipPathUnits="objectBoundingBox"
+                transform="scale(0.0049285362247413 0.021978021978022)">
+                <path d="M6.7,45.5c5.7,0.1,14.1-0.4,23.3-4c5.7-2.3,9.9-5,18.1-10.5c10.7-7.1,11.8-9.2,20.6-14.3c5-2.9,9.2-5.2,15.2-7
+              c7.1-2.1,13.3-2.3,17.6-2.1c4.2-0.2,10.5,0.1,17.6,2.1c6.1,1.8,10.2,4.1,15.2,7c8.8,5,9.9,7.1,20.6,14.3c8.3,5.5,12.4,8.2,18.1,10.5
+              c9.2,3.6,17.6,4.2,23.3,4H6.7z" />
+            </clipPath>
+        </svg>
+    </div>
+
+    <section id="home">
+        <div class="container reveal row py-5 ">
+            <div class="col-lg-6 col-md-6 col-sm-12 text-white text-center">
+                <h1>Hello, I am<strong> Amir Maldaran </strong>, a programmer and web designer</h1>
+                <p class="py-5">This is my personal website for more information.</p>
+                <a href="#contact">
+                    <button class="btn callMe mb-5">Contact Me</button>
+                </a>
+            </div>
+            <img src="image/Lovepik_com-450092792- illustration of software development male developer.png"
+                alt=" image developer" class="col-lg-6 col-md-6 col-sm-12">
+        </div>
+    </section>
+    <section id="about">
+        <div class="container reveal row py-5">
+            <h1 class="col-12 text-center mt-5 ">About Me</h1>
+            <div class="row justify-content-between">
+
+                <div class="col-lg-6 col-md-7 col-sm-12">
+                    <h3 class="py-3">my skills</h3>
+                    <img src="image/html-5.png" alt="html 5" class="imgLanguage">
+                    <span>HTML</span>
+                    <div class="skillwrap">
+                        <div class="skillbar-bar" style="width: 85%;"></div>
+                    </div>
+                    <img src="image/css-3.png" alt="css" class="imgLanguage">
+                    <span>CSS</span>
+                    <div class="skillwrap">
+                        <div class="skillbar-bar" style="width: 80%;"></div>
+                    </div>
+                    <img src="image/java-script.png" alt="java script" class="imgLanguage">
+                    <span>JAVA SCRIPT</span>
+                    <div class="skillwrap">
+                        <div class="skillbar-bar" style="width: 72%;"></div>
+                    </div>
+                    <!-- <img src="image/python.png" alt="python" class="imgLanguage">
+                    <span>PYTHON</span>
+                    <div class="skillwrap">
+                        <div class="skillbar-bar" style="width: 80%;"></div>
+                    </div> -->
+                    <img src="image/c-.png" alt="cpp" class="imgLanguage">
+                    <span>C++</span>
+                    <div class="skillwrap">
+                        <div class="skillbar-bar" style="width: 60%;"></div>
+                    </div>
+                    <!-- <img src="image/database-storage.png" alt="database" class="imgLanguage">
+                    <span>DATA BASE</span>
+                    <div class="skillwrap">
+                        <div class="skillbar-bar" style="width: 90%;"></div>
+                    </div> -->
+                    <!-- <img src="image/physics.png" alt="physics" class="imgLanguage">
+                    <span>REACT</span>
+                    <div class="skillwrap">
+                        <div class="skillbar-bar" style="width: 10%;"></div>
+                    </div> -->
+                    <!-- <img src="image/chatbot.png" alt="robat" class="imgLanguage">
+                    <span>ROBAT TELEGRAM</span>
+                    <div class="skillwrap">
+                        <div class="skillbar-bar" style="width: 88%;"></div>
+                    </div> -->
+
+                </div>
+
+                <div class="col-lg-5 col-md-5 col-sm-12 pt-5">
+                    <div class="col-12 mt-5">
+                        <div class="profile-card">
+                            <div class="profile-card__img">
+                                <img src="image/prof2.jpg" alt="profile card">
+                            </div>
+
+                            <div class="profile-card__cnt">
+                                <div class="profile-card__name">Amir Maldaran</div>
+                                <div class="profile-card__txt">front end dev</div>
+                                <div class="profile-card-loc">
+
+
+                                    <span class="profile-card-loc__txt">
+                                        <i class="fas fa-location"></i> iran,mashhad
+                                    </span>
+                                </div>
+                                <a href="#contact">
+                                    <button class="profile-card__button col-5 mt-4">Contact Me</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="image/Lovepik_com-450070212-an api interface flat illustration vector.png" alt="developer"
+                        class="col-12">
+                </div>
+
+            </div>
+    </section>
+
+    <section id="services">
+        <div class="container reveal">
+            <h1 class="col-12 text-center pt-5 ">Recent projects</h1>
+            <div class="row  justify-content-evenly  py-5">
+                <div class="card card3 col-lg-3 col-10 mb-4">
+                    <div class="containerImage">
+                        <img src="image/project-1.png" alt="w3">
+                    </div>
+                    <div class="details">
+                        <h3>Lorem Epsom</h3>
+                        <p>
+                            Lorem Epsom is a mock text with an incomprehensible simplicity
+                            produced by the printing industry and used by graphic designers
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="wrapper" id="contact">
+        <div class="container reveal">
+
+            <ul class="bg-bubbles">
+                <h1 class="col-12 text-center my-5">Contact Me</h1>
+                <form action="" class="col-12 mt-5 row d-flex justify-content-evenly ">
+                    <div class="col-lg-5 col-sm-12">
+                        <div>
+                            <h4 class="text-danger">*Warning for Cobra 11</h4>
+                            <div class="form-floating">
+                                <input type="text" class="col-12 mb-4 form-control" id="Name" placeholder=" ">
+                                <label for="Name">Name:</label>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="text-danger">*Warning for Cobra 11</h4>
+                            <div class="form-floating">
+                                <input type="email" class="col-12 mb-4 form-control" id="Email" placeholder=" ">
+                                <label for="Email">E-mail:</label>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="text-danger">*Warning for Cobra 11</h4>
+                            <div class="form-floating">
+                                <input type="text" class="col-lg-12 mb-lg-0   mb-4  form-control" id="Description"
+                                    placeholder=" ">
+                                <label for="Description">Message Subject:</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" col-lg-5 col-sm-12">
+                        <h4 class="text-danger">*Warning for Cobra 11</h4>
+                        <div class="form-floating">
+                            <textarea name="" id="Message" class="form-control h-100" rows="13"
+                                placeholder=" "></textarea>
+                            <label for="Message">Message:</label>
+                        </div>
+                    </div>
+                    <button class="col-sm-3 col-10 my-5 btn py-2 " id="send">
+                        Send 
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+
+        </div>
+    </section>
+    <div class=" d-flex justify-content-evenly py-4  col-12" id="footer">
+        <a href=""><i style="--colorShadow: #EA56AC; font-size: xx-large;" class="fa fa-instagram"></i></a>
+        <a href=""><i class="fa fa-telegram" style="--colorShadow: #67BDEB; font-size: xx-large;"></i></a>
+        <a href=""><i class="fa fa-whatsapp" style="--colorShadow: #9FDE84; font-size: xx-large;"></i></a>
+    </div>
+
+</body>
+
+</html>
